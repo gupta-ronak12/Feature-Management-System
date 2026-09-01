@@ -29,3 +29,7 @@ class FeatureFlagResponse(BaseModel):
 
     class Config:
         from_attributes = True
+
+class FlagEvaluationRequest(BaseModel):
+    flag_key: str
+    environment: str      
